@@ -14,7 +14,7 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f1f1f1;
+            background-color: #fff;
             color: #333;
             direction: ltr;
             text-align: center;
@@ -25,34 +25,31 @@
         }
 
         header {
-            background-color: #2d87f0;
+            background-color: #111;
             color: #fff;
             padding: 40px 0;
             text-align: center;
             position: relative;
         }
 
-        header h1 {
+        header h1, header h2 {
             font-size: 3rem;
             margin-bottom: 10px;
             letter-spacing: 2px;
         }
 
         header h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-weight: normal;
+            color: #e63946;
         }
 
         .typing-effect {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #fff;
             display: inline-block;
             border-right: 3px solid;
             padding-right: 5px;
-            animation: typing 2s steps(40) 1s forwards, blink 0.75s step-end infinite;
+            animation: typing 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
         }
 
         @keyframes typing {
@@ -90,7 +87,7 @@
         }
 
         .btn-primary {
-            background-color: #2d87f0;
+            background-color: #e63946;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -100,11 +97,11 @@
         }
 
         .btn-primary:hover {
-            background-color: #1d64b0;
+            background-color: #c51d3e;
         }
 
         footer {
-            background-color: #333;
+            background-color: #111;
             color: #fff;
             padding: 15px 0;
             position: fixed;
@@ -122,7 +119,7 @@
 
         .nav-links a {
             font-size: 1.2rem;
-            color: #2d87f0;
+            color: #e63946;
             margin: 0 15px;
             text-decoration: none;
         }
@@ -141,7 +138,7 @@
 
         .content-section h2 {
             font-size: 2rem;
-            color: #2d87f0;
+            color: #e63946;
             margin-bottom: 20px;
         }
 
@@ -166,10 +163,10 @@
 
     <!-- Header Section -->
     <header>
-        <h1 id="name">Mohamed Metwally</h1>
-        <h2>Accountant, Financial Analyst, Data Analyst</h2>
+        <h1 id="name" class="typing-effect">Mohamed Metwally</h1>
+        <h2 class="typing-effect">Accountant, Financial Analyst, Data Analyst</h2>
         <div class="typing-effect" id="typing-effect">Mohamed Metwally</div>
-        <img src="your-photo.jpg" alt="Mohamed Metwally" class="profile-img">
+        <img src="https://drive.google.com/uc?export=view&id=1ZuIowj4L4Vi-AaAyXE2_HjY_rFhC5VV-" alt="Mohamed Metwally" class="profile-img">
         
         <!-- File upload for profile picture -->
         <div class="file-upload">
@@ -177,11 +174,11 @@
         </div>
         
         <div class="nav-links">
-            <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Work Experience</a>
-            <a href="#achievements">Achievements</a>
+            <a href="#education" class="typing-effect">Education</a>
+            <a href="#certifications" class="typing-effect">Certifications</a>
+            <a href="#skills" class="typing-effect">Skills</a>
+            <a href="#experience" class="typing-effect">Work Experience</a>
+            <a href="#achievements" class="typing-effect">Achievements</a>
         </div>
     </header>
 
@@ -253,4 +250,5 @@
 
 </body>
 </html>
+
 
