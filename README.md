@@ -14,39 +14,61 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f1f1f1;
             color: #333;
             direction: ltr;
+            text-align: center;
         }
 
-        /* Adding right to left for Arabic support */
         body[lang="ar"] {
             direction: rtl;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #2d87f0;
             color: #fff;
-            padding: 30px;
+            padding: 40px 0;
             text-align: center;
-            border-bottom: 3px solid #fff;
+            position: relative;
         }
 
         header h1 {
+            font-size: 3rem;
             margin-bottom: 10px;
-            font-size: 2.5rem;
+            letter-spacing: 2px;
         }
 
-        header p {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
+        header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .typing-effect {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            border-right: 3px solid;
+            padding-right: 5px;
+            animation: typing 2s steps(40) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
         }
 
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-top: 10px;
+            margin-top: 20px;
             border: 5px solid #fff;
             object-fit: cover;
         }
@@ -57,202 +79,178 @@
             padding: 20px;
         }
 
-        section {
-            margin-bottom: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 8px;
+        .file-upload {
+            margin-top: 20px;
+            display: inline-block;
         }
 
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #4CAF50;
-        }
-
-        section h3 {
-            font-size: 1.4rem;
-            margin-top: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-
-        .language-toggle {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .language-toggle button {
-            padding: 10px 20px;
+        .file-upload input {
             font-size: 1rem;
-            margin: 5px;
-            cursor: pointer;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            background-color: #fff;
-            color: #4CAF50;
+            padding: 10px;
         }
 
-        .language-toggle button:hover {
-            background-color: #4CAF50;
+        .btn-primary {
+            background-color: #2d87f0;
             color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d64b0;
         }
 
         footer {
             background-color: #333;
             color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
         footer p {
+            font-size: 1rem;
+        }
+
+        .nav-links {
+            margin: 30px 0;
+        }
+
+        .nav-links a {
+            font-size: 1.2rem;
+            color: #2d87f0;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            padding: 50px 0;
+            background-color: #fff;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: #2d87f0;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
             font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .content-section ul {
+            list-style-type: none;
+            font-size: 1rem;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .content-section ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body lang="en">
+
+    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Mohamed Metwally Mohamed</h1>
-            <p>Awlad Saqr, Sharqiyah, Egypt | Phone: +01002347613 | Email: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5">www.linkedin.com/in/mohamed-metwally-0182bb2b5</a></p>
-            <img src="your-photo.jpg" alt="Mohamed Metwally" class="profile-img">
+        <h1 id="name">Mohamed Metwally</h1>
+        <h2>Accountant, Financial Analyst, Data Analyst</h2>
+        <div class="typing-effect" id="typing-effect">Mohamed Metwally</div>
+        <img src="your-photo.jpg" alt="Mohamed Metwally" class="profile-img">
+        
+        <!-- File upload for profile picture -->
+        <div class="file-upload">
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        
+        <div class="nav-links">
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#achievements">Achievements</a>
         </div>
     </header>
 
-    <div class="language-toggle">
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('ar')">العربية</button>
+    <!-- Content Section for Education -->
+    <div id="education" class="content-section">
+        <h2>Education</h2>
+        <p><strong>Bachelor’s Degree in Accounting</strong> – Faculty of Commerce, Benha University (Expected Graduation: 2025) – GPA: Very Good</p>
     </div>
 
-    <div class="container">
-        <section class="objective">
-            <h2>Objective</h2>
-            <p>Seeking a Banker position to apply my skills in financial management, customer service, and banking operations. Passionate about enhancing client experience and optimizing financial processes through data analysis and digital banking solutions.</p>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <p><strong>Bachelor’s Degree in Accounting</strong><br> Faculty of Commerce, Benha University (Expected Graduation: 2025) – GPA: Very Good</p>
-        </section>
-
-        <section class="certifications">
-            <h2>Certifications & Courses</h2>
-            <ul>
-                <li><strong>Diploma in Accounting and Finance</strong> – Oxford Home Study College (Jan 2025 – Mar 2025)</li>
-                <li><strong>Diploma in Effective Bookkeeping and Payroll</strong> – Alison (Jan 2025 – Mar 2025)</li>
-                <li><strong>AI Career Essentials</strong> – ALX (Dec 2024 – Feb 2025)</li>
-                <li><strong>AWS Cloud Economics for Startups</strong> – Amazon Web Services (AWS) (Nov 2024 – Jan 2025)</li>
-                <li><strong>Financial Services</strong> – Amazon Web Services (AWS) (Oct 2024 – Dec 2024)</li>
-                <li><strong>Services Analyst</strong> – Amazon Web Services (AWS) (Sep 2024 – Nov 2024)</li>
-                <li><strong>Getting Started with Amazon</strong> – Amazon Web Services (AWS) (Aug 2024 – Oct 2024)</li>
-                <li><strong>Skills for Communication</strong> – IBM (Jul 2024 – Sep 2024)</li>
-                <li><strong>Liquidity Management</strong> – The Open University (Jun 2024 – Aug 2024)</li>
-                <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – Jul 2024)</li>
-                <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (Apr 2024 – Jun 2024)</li>
-                <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (Mar 2024 – May 2024)</li>
-                <li><strong>BuildSkills</strong> – Eyoot (Feb 2024 – Apr 2024)</li>
-                <li><strong>Master's in Business Administration (Mini MBA)</strong> – American Board of Professional Studies (Jul 2023 – Apr 2024)</li>
-                <li><strong>Small Project Implementation Phases, Business Models, Financial Planning Programs, Entrepreneurship, Bank and Small Projects Relationship</strong> – Banking Institute (Jun 2023 – Aug 2023)</li>
-                <li><strong>Entrepreneurship</strong> – Undergraduate Researchers Initiative (Jan 2023 – Mar 2023)</li>
-                <li><strong>Introduction to Banking, Accounting Fundamentals, Reading Financial Statements, Introduction to Capital Markets</strong> – CFI Institute (Dec 2022 – Feb 2023)</li>
-                <li><strong>Certified International Trainer Diploma</strong> – Cambridge International Academy, UK (Nov 2022 – Jan 2023)</li>
-                <li><strong>ICDL Preparation Course</strong> – UNIX Academy (Oct 2022 – Dec 2022)</li>
-            </ul>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <h3>Personal Skills</h3>
-            <ul>
-                <li>Communication skills</li>
-                <li>Negotiation skills</li>
-                <li>Analytical skills</li>
-                <li>Attention to detail</li>
-                <li>Time management skills</li>
-            </ul>
-
-            <h3>Language Skills</h3>
-            <ul>
-                <li>Arabic: Native</li>
-                <li>English: Proficient (writing and speaking)</li>
-                <li>French: Good</li>
-            </ul>
-
-            <h3>Computer Skills</h3>
-            <ul>
-                <li>Microsoft Office (Excel, Word, Access, PowerPoint)</li>
-                <li>Oracle Database</li>
-                <li>Python (data analysis and automation)</li>
-                <li>QuickBooks, SAP (accounting software)</li>
-            </ul>
-
-            <h3>Banking and Financial Skills</h3>
-            <ul>
-                <li>Financial statement analysis and reporting</li>
-                <li>Banking regulations and financial compliance</li>
-                <li>Loan processing and risk assessment</li>
-                <li>Cash flow management and financial forecasting</li>
-                <li>Budgeting and financial planning</li>
-                <li>Accounting principles (GAAP, IFRS)</li>
-            </ul>
-        </section>
-
-        <section class="work-experience">
-            <h2>Work Experience</h2>
-            <p><strong>Intern at CIB Bank</strong> (June 2024 – August 2024)</p>
-            <p>Gained experience in banking operations and financial services, focusing on customer service.</p>
-
-            <p><strong>Intern at Faisal Islamic Bank</strong> (June 2023 – August 2023)</p>
-            <p>Gained knowledge of Islamic banking practices and assisted with daily banking functions.</p>
-
-            <p><strong>Accountant at Business Compaq Office for Accounting</strong> (March 2021 – April 2023)</p>
-            <p>Responsible for maintaining financial records, processing transactions, and assisting with audits using accounting software.</p>
-        </section>
-
-        <section class="achievements">
-            <h2>Achievements & Activities</h2>
-            <ul>
-                <li><strong>Ideal Student Award</strong>: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
-                <li><strong>University Research Recognition</strong>: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
-                <li><strong>First Place in Scientific Research</strong>: Awarded first place for Scientific Research in 2025.</li>
-                <li><strong>CMA Scholarship</strong>: Awarded a CMA scholarship in recognition of academic excellence and professional potential.</li>
-                <li><strong>President, University Cities Students Union, Benha University</strong>: Led student initiatives and advocated for student welfare across university cities.</li>
-                <li><strong>Member, European Organization for Human Rights and Sustainable Development</strong>: Contributed to efforts in human rights advocacy and sustainability.</li>
-                <li><strong>International Certified Trainer</strong>: Certified by Cambridge Academy and the Human Development Trainers Syndicate, focusing on personal and professional development.</li>
-                <li><strong>Volunteer, Life Makers Organization</strong>: Actively participated in community service initiatives in Sharkia Governorate.</li>
-                <li><strong>Director, Egyptian Organization for Human Rights and Development</strong>: Oversaw and supported institutional initiatives aimed at enhancing human rights in Egypt.</li>
-                <li><strong>Published Research Paper</strong>: Published a paper on “Activating the Partnership between the Faculty of Commerce, University Faculties, and Community Institutions” to improve educational and practical outcomes for students.</li>
-                <li><strong>Technology Awareness Ambassador</strong>: Participated in the Ministry of Social Solidarity’s Technology Awareness Ambassadors Program to promote digital literacy.</li>
-                <li><strong>Symposia Participation</strong>: Attended key symposia on etiquette, economic challenges, and international cooperation organized by Alexandria University.</li>
-            </ul>
-        </section>
+    <!-- Content Section for Certifications -->
+    <div id="certifications" class="content-section">
+        <h2>Certifications</h2>
+        <ul>
+            <li><strong>Diploma in Accounting and Finance</strong> – Oxford Home Study College (January 2025 – March 2025)</li>
+            <li><strong>Diploma in Effective Bookkeeping and Payroll</strong> – Alison (January 2025 – March 2025)</li>
+            <li><strong>AI Career Essentials</strong> – ALX (December 2024 – February 2025)</li>
+            <li><strong>AWS Cloud Economics for Startups</strong> – Amazon Web Services (AWS) (November 2024 – January 2025)</li>
+            <li><strong>Financial Services</strong> – Amazon Web Services (AWS) (October 2024 – December 2024)</li>
+            <li><strong>Services Analyst</strong> – Amazon Web Services (AWS) (September 2024 – November 2024)</li>
+            <li><strong>Getting Started with Amazon</strong> – Amazon Web Services (AWS) (August 2024 – October 2024)</li>
+            <li><strong>Skills for Communication</strong> – IBM (July 2024 – September 2024)</li>
+            <li><strong>Liquidity Management</strong> – The Open University (June 2024 – August 2024)</li>
+            <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – July 2024)</li>
+            <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (April 2024 – June 2024)</li>
+            <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (March 2024 – May 2024)</li>
+        </ul>
     </div>
 
+    <!-- Content Section for Skills -->
+    <div id="skills" class="content-section">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Data Analysis</strong> – Proficient in SQL, Python, Excel, QuickBooks, SAP</li>
+            <li><strong>Financial Analysis</strong> – Budgeting, Forecasting, Cash Flow Management</li>
+            <li><strong>Accounting</strong> – Financial Reporting, Auditing, Taxation, Payroll</li>
+            <li><strong>Communication</strong> – Strong interpersonal and communication skills</li>
+            <li><strong>Language Skills</strong> – Arabic (Native), English (Fluent), French (Intermediate)</li>
+        </ul>
+    </div>
+
+    <!-- Content Section for Work Experience -->
+    <div id="experience" class="content-section">
+        <h2>Work Experience</h2>
+        <p><strong>Accountant</strong> – Business Comeback Company (July 2022 – August 2023)</p>
+        <p><strong>Financial Analyst Intern</strong> – Bank of CIB, Zagazig Branch (August 2024 – September 2024)</p>
+        <p><strong>Banking Intern</strong> – Bank Faisal Islami (October 2023 – December 2023)</p>
+    </div>
+
+    <!-- Content Section for Achievements -->
+    <div id="achievements" class="content-section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Top Research Award 2025</li>
+            <li>Received the CMA Scholarship</li>
+            <li>Published Research in the International Journal of Economic Studies – Berlin</li>
+            <li>First Prize in Academic Research at Benha University (2024)</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
     <footer>
         <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com</a></p>
     </footer>
 
     <script>
-        function setLanguage(lang) {
-            document.documentElement.lang = lang;
-            if (lang === 'ar') {
-                document.body.classList.add('rtl');
-            } else {
-                document.body.classList.remove('rtl');
-            }
-        }
+        // Name typing effect
+        document.getElementById('name').innerHTML = 'Mohamed Metwally';
     </script>
+
 </body>
 </html>
 
