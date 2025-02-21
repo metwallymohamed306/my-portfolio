@@ -1,64 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد متولي - الصفحة الشخصية</title>
+    <title>محفظتي الشخصية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #f4f4f4; }
-        .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #333; color: #fff; padding: 20px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; margin-top: 20px; }
-        .content { padding: 20px; }
-        .section { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        ul { list-style-type: none; padding: 0; }
-        li { padding: 5px; }
-        .social-links a { margin: 10px; display: inline-block; text-decoration: none; color: white; background: #0073e6; padding: 10px 15px; border-radius: 5px; }
+        /* تنسيق عام */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* قسم الترحيب */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #333;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        /* قسم عنّي */
+        #about {
+            padding: 50px 20px;
+            background-color: #222;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* قسم المشاريع */
+        #projects {
+            padding: 50px 20px;
+            background-color: #333;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+        }
+
+        /* قسم الاتصال */
+        #contact {
+            padding: 50px 20px;
+            background-color: #222;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* التذييل */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>محمد متولي</h1>
-        <p>محاسب وباحث مساعد - شغوف بالتكنولوجيا وريادة الأعمال</p>
-    </header>
-    
-    <div class="container">
-        <img src="profile.jpg" alt="محمد متولي" class="profile-img">
-        
-        <div class="section">
-            <h2>نبذة عني</h2>
-            <p>أنا محمد متولي، محاسب مالي وباحث مساعد في مجال المحاسبة والمراجعة. أمتلك خبرة في تحليل البيانات والقطاع المصرفي، وأطمح إلى دمج التكنولوجيا في مجال المالية.</p>
+    <!-- شريط التنقل -->
+    <nav>
+        <div class="logo">محمد متولي</div>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عنّي</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">اتصال</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم الترحيب -->
+    <section id="home" class="hero">
+        <h1>مرحبًا! أنا محمد متولي</h1>
+        <p>مطور ومحاسب مالي. شغوف بالتكنولوجيا وتحليل البيانات.</p>
+    </section>
+
+    <!-- قسم عنّي -->
+    <section id="about">
+        <h2>عنّي</h2>
+        <p>أنا طالب في جامعة بنها، وأعمل في مجال المحاسبة والتكنولوجيا. أحب تعلم كل ما هو جديد.</p>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects">
+        <h2>المشاريع</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>مشروع 1</h3>
+                <p>وصف مختصر للمشروع.</p>
+            </div>
+            <div class="project">
+                <h3>مشروع 2</h3>
+                <p>وصف مختصر للمشروع.</p>
+            </div>
         </div>
-        
-        <div class="section">
-            <h2>الكورسات والشهادات</h2>
-            <ul>
-                <li>دبلومة المحاسبة والتمويل - Oxford Home Study College</li>
-                <li>دبلومة مسك الدفاتر وكشوف الرواتب - Alison</li>
-                <li>ماجستير إدارة الأعمال المصغر - البورد الأمريكي للدراسات المهنية</li>
-                <li>شهادات في التحليل المالي والخدمات المصرفية من CFI</li>
-                <li>شهادات من AWS, IBM, UNICEF, SAS</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>الإنجازات</h2>
-            <ul>
-                <li>الطالب المثالي - كلية التجارة، جامعة بنها (2024-2025)</li>
-                <li>المركز الأول في الأبحاث العلمية لعام 2025</li>
-                <li>جائزة الجامعة التشجيعية للأبحاث العلمية لعام 2024</li>
-                <li>منحة CMA تقديرًا للتميز الأكاديمي</li>
-                <li>نشر بحث علمي في المجلة الدولية للدراسات الاقتصادية - برلين</li>
-            </ul>
-        </div>
-        
-        <div class="section social-links">
-            <h2>تواصل معي</h2>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="mailto:your-email@example.com">البريد الإلكتروني</a>
-        </div>
-    </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact">
+        <h2>اتصال</h2>
+        <p>يمكنك التواصل معي عبر البريد الإلكتروني: example@example.com</p>
+    </section>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2025 محمد متولي</p>
+    </footer>
 </body>
 </html>
-# my-portfolio
+
