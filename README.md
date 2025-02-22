@@ -31,7 +31,7 @@
 
         header {
             background-color: #000000;
-            color: #FFBF00;
+            color: #ffffff;
             padding: 40px 0;
             text-align: center;
             position: relative;
@@ -44,13 +44,13 @@
         }
 
         header h2 {
-            color: #FFBF00;
+            color: #ffffff;
         }
 
         .typing-effect {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #FFBF00;
+            color: #ffffff;
             display: inline-block;
             border-right: 3px solid;
             padding-right: 5px;
@@ -71,7 +71,7 @@
             height: 150px;
             border-radius: 50%;
             margin-top: 20px;
-            border: 5px solid #FFBF00;
+            border: 5px solid #ffffff;
             object-fit: cover;
         }
 
@@ -82,8 +82,8 @@
         }
 
         .btn-primary {
-            background-color: #FFBF00;
-            color: #fff;
+            background-color: #ffffff;
+            color: #000000;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -92,7 +92,8 @@
         }
 
         .btn-primary:hover {
-            background-color: #FF9F00;
+            background-color: #000000;
+            color: #ffffff;
         }
 
         footer {
@@ -114,7 +115,7 @@
 
         .nav-links a {
             font-size: 1.2rem;
-            color: #FFBF00;
+            color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
         }
@@ -125,7 +126,8 @@
 
         .content-section {
             padding: 50px 0;
-            background-color: #f1f1f1;
+            background-color: #ffffff;
+            color: #000000;
             margin-top: 30px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -133,7 +135,7 @@
 
         .content-section h2 {
             font-size: 2rem;
-            color: #FFBF00;
+            color: #000000;
             margin-bottom: 20px;
         }
 
@@ -157,9 +159,41 @@
             color: #FF6347;
         }
 
+        /* Social Media Links */
+        .social-media {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-media a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: #FF6347;
+        }
+
     </style>
 </head>
 <body lang="en">
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:MohamedMetwally.Mohamed@outlook.com" title="Email">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="tel:+01002347613" title="Phone">
+            <i class="fas fa-phone"></i> Phone
+        </a>
+    </div>
 
     <!-- Header Section -->
     <header>
@@ -244,14 +278,6 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com</a></p>
-    </footer>
+        <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com
 
-    <script>
-        // Name typing effect
-        document.getElementById('name').innerHTML = 'Mohamed Metwally';
-    </script>
-
-</body>
-</html>
 
