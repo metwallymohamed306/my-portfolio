@@ -98,8 +98,14 @@
         <div class="contact-buttons">
             <a href="mailto:MohamedMetwally.Mohamed@outlook.com">Email Me</a>
             <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank">LinkedIn</a>
+            <a href="tel:+201002347613">Call Me</a>
         </div>
     </header>
+
+    <div class="content-section" id="summary">
+        <h2>About Me</h2>
+        <p>A highly motivated and detail-oriented accounting graduate with strong expertise in financial analysis, banking, and data analysis. Adept at utilizing SQL, Excel, and QuickBooks to drive data-driven decision-making. Recognized for leadership skills, winning awards such as Ideal Student and First Place in Scientific Research. Passionate about integrating financial insights with digital transformation in the banking sector.</p>
+    </div>
 
     <div class="content-section" id="education">
         <h2>Education</h2>
