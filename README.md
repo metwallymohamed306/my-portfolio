@@ -74,29 +74,37 @@
             width: 100%;
             bottom: 0;
         }
+
+        .contact-buttons {
+            margin-top: 20px;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mohamed Metwally</h1>
         <h2>Accountant, Financial Analyst, Data Analyst</h2>
+        <div class="contact-buttons">
+            <a href="mailto:MohamedMetwally.Mohamed@outlook.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank">LinkedIn</a>
+        </div>
     </header>
-
-    <div class="content-section" id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: mohamed.metwally@example.com</li>
-            <li>LinkedIn: linkedin.com/in/mohamedmetwally</li>
-            <li>Phone: +20 100 234 7613</li>
-        </ul>
-    </div>
 
     <div class="content-section" id="education">
         <h2>Education</h2>
         <ul>
             <li>Bachelor's Degree in Accounting - Faculty of Commerce, Benha University (Expected 2025) - GPA: Very Good</li>
-            <li>Diploma in Accounting and Finance - Oxford Home Study College</li>
-            <li>Diploma in Effective Bookkeeping and Payroll - Alison</li>
         </ul>
     </div>
 
