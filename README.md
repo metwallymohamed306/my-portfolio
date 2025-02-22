@@ -14,14 +14,14 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #fff;
-            color: #333;
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/52/Benha_University_logo.png');
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
-            background-size: 20%;
+            background-size: 15%;
             opacity: 0.1;
         }
 
@@ -30,8 +30,8 @@
         }
 
         header {
-            background-color: #111;
-            color: #fff;
+            background-color: #000000;
+            color: #FFBF00;
             padding: 40px 0;
             text-align: center;
             position: relative;
@@ -50,7 +50,7 @@
         .typing-effect {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #fff;
+            color: #FFBF00;
             display: inline-block;
             border-right: 3px solid;
             padding-right: 5px;
@@ -71,7 +71,7 @@
             height: 150px;
             border-radius: 50%;
             margin-top: 20px;
-            border: 5px solid #fff;
+            border: 5px solid #FFBF00;
             object-fit: cover;
         }
 
@@ -96,8 +96,8 @@
         }
 
         footer {
-            background-color: #111;
-            color: #fff;
+            background-color: #000000;
+            color: #ffffff;
             padding: 15px 0;
             position: fixed;
             width: 100%;
@@ -125,7 +125,7 @@
 
         .content-section {
             padding: 50px 0;
-            background-color: #fff;
+            background-color: #f1f1f1;
             margin-top: 30px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -254,5 +254,4 @@
 
 </body>
 </html>
-
 
