@@ -190,7 +190,6 @@
             <li>First Place in Scientific Research: Awarded first place for Scientific Research in 2025.</li>
  <li>Ideal Student Award: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
         <li>University Research Recognition: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
-        <li>First Place in Scientific Research: Awarded first place for Scientific Research in 2025.</li>
         <li>CMA Scholarship: Awarded a CMA scholarship in recognition of academic excellence and professional potential.</li>
         <li>President, University Cities Students Union, Benha University: Led student initiatives and advocated for student welfare across university cities.</li>
         <li>Member, European Organization for Human Rights and Sustainable Development: Contributed to efforts in human rights advocacy and sustainability.</li>
