@@ -131,10 +131,10 @@
         <div id="header">
             <div class="header-content">
                 <h1>Mohamed Metwally</h1>
-                <p>Accountant | Banking Operations | Financial Analyst |DATE Analys </p>
+                <p>Accountant | Banking Operations | Financial Analyst |DATE Analyst </p>
             </div>
             <div class="contact-info">
-                <a href="tel:01002347613" class="contact-item">Phone: 01111224933</a>
+                <a href="tel:"01002347613" class="contact-item">Phone: 01002347613</a>
                 <a href="https://www.linkedin.com/in/your-linkedin" class="contact-item">LinkedIn</a>
                 <a href="mailto:your-email@example.com" class="contact-item">Email</a>
             </div>
