@@ -13,16 +13,10 @@
 
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
             line-height: 1.6;
-            background-color: #000000;
-            color: #ffffff;
             text-align: center;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/52/Benha_University_logo.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            background-size: 15%;
-            opacity: 0.1;
         }
 
         body[lang="ar"] {
@@ -30,93 +24,138 @@
         }
 
         header {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 40px 0;
+            background-color: #ffffff;
+            padding: 20px 0;
             text-align: center;
             position: relative;
+            border-bottom: 2px solid #000000;
         }
 
-        header h1, header h2 {
+        header h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
+            font-weight: bold;
+            color: #000000;
             letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         header h2 {
-            color: #ffffff;
+            font-size: 1.5rem;
+            color: #000000;
+            margin-bottom: 15px;
+            font-weight: normal;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        .typing-effect {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ffffff;
-            display: inline-block;
-            border-right: 3px solid;
-            padding-right: 5px;
-            animation: typing 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
+        .social-media {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            font-size: 1.3rem;
+            color: #000000;
+            text-transform: uppercase;
         }
 
-        @keyframes blink {
-            50% { border-color: transparent; }
+        .social-media a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 5px solid #ffffff;
-            object-fit: cover;
+        .social-media a:hover {
+            color: #FF6347;
         }
 
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
         }
 
         .btn-primary {
-            background-color: #ffffff;
-            color: #000000;
+            background-color: #000000;
+            color: #ffffff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
         }
 
         .btn-primary:hover {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #FF6347;
         }
 
         footer {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
             padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            border-top: 2px solid #000000;
         }
 
         footer p {
             font-size: 1rem;
         }
 
+        .content-section {
+            padding: 40px 0;
+            background-color: #ffffff;
+            color: #000000;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .content-section p, .content-section ul {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .content-section ul {
+            list-style-type: none;
+        }
+
+        .content-section ul li {
+            margin-bottom: 10px;
+        }
+
         .nav-links {
-            margin: 30px 0;
+            margin-top: 20px;
+            text-align: center;
         }
 
         .nav-links a {
             font-size: 1.2rem;
-            color: #ffffff;
-            margin: 0 15px;
+            color: #000000;
+            margin: 0 20px;
             text-decoration: none;
         }
 
@@ -124,93 +163,32 @@
             text-decoration: underline;
         }
 
-        .content-section {
-            padding: 50px 0;
-            background-color: #ffffff;
-            color: #000000;
-            margin-top: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .content-section h2 {
-            font-size: 2rem;
-            color: #000000;
-            margin-bottom: 20px;
-        }
-
-        .content-section p {
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .content-section ul {
-            list-style-type: none;
-            font-size: 1rem;
-            text-align: left;
-            margin-top: 15px;
-        }
-
-        .content-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .nav-links a:active {
-            color: #FF6347;
-        }
-
-        /* Social Media Links */
-        .social-media {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-        }
-
-        .social-media a {
-            color: #ffffff;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-
-        .social-media a:hover {
-            color: #FF6347;
-        }
-
     </style>
 </head>
 <body lang="en">
 
-    <!-- Social Media Links -->
-    <div class="social-media">
-        <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:MohamedMetwally.Mohamed@outlook.com" title="Email">
-            <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="tel:+01002347613" title="Phone">
-            <i class="fas fa-phone"></i> Phone
-        </a>
-    </div>
-
     <!-- Header Section -->
     <header>
-        <h1 id="name" class="typing-effect">Mohamed Metwally</h1>
-        <h2 class="typing-effect">Accountant, Financial Analyst, Data Analyst</h2>
-        <div class="typing-effect" id="typing-effect">Mohamed Metwally</div>
-        <img src="https://drive.google.com/uc?export=view&id=1ZuIowj4L4Vi-AaAyXE2_HjY_rFhC5VV-" alt="Mohamed Metwally" class="profile-img">
-        
-        <div class="nav-links">
-            <a href="#about" class="typing-effect">About Me</a>
-            <a href="#education" class="typing-effect">Education</a>
-            <a href="#certifications" class="typing-effect">Certifications</a>
-            <a href="#skills" class="typing-effect">Skills</a>
-            <a href="#experience" class="typing-effect">Work Experience</a>
-            <a href="#achievements" class="typing-effect">Achievements</a>
+        <h1>Mohamed Metwally</h1>
+        <h2>Accountant | Financial Analyst | Data Analyst</h2>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="mailto:MohamedMetwally.Mohamed@outlook.com" title="Email">Email</a>
+            <a href="tel:+01002347613" title="Phone">Phone</a>
         </div>
     </header>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#achievements">Achievements</a>
+    </div>
 
     <!-- About Me Section -->
     <div id="about" class="content-section">
@@ -262,22 +240,15 @@
         <h2>Work Experience</h2>
         <p><strong>Accountant</strong> – Business Comeback Company (July 2022 – August 2023)</p>
         <p><strong>Financial Analyst Intern</strong> – Bank of CIB, Zagazig Branch (August 2024 – September 2024)</p>
-        <p><strong>Banking Intern</strong> – Bank Faisal Islami (October 2023 – December 2023)</p>
-    </div>
-
-    <!-- Achievements Section -->
-    <div id="achievements" class="content-section">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Top Research Award 2025</li>
-            <li>Received the CMA Scholarship</li>
-            <li>Published Research in the International Journal of Economic Studies – Berlin</li>
-            <li>First Prize in Academic Research at Benha University (2024)</li>
-        </ul>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com
+        <p>&copy; 2025 Mohamed Metwally | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
 
 
