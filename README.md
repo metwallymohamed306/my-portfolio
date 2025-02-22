@@ -1,8 +1,3 @@
-لجعل الصفحة مشابهة للتصميم في الرابط الذي قدمته، سنحتاج إلى إجراء بعض التعديلات في تنسيق الصفحة وتحديث أسلوب عرض العناصر لتكون أكثر حداثة وتناسبًا مع التنسيق المطلوب.
-
-إليك الكود المعدل الذي يقترب من التصميم الذي ترغب فيه:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +53,24 @@
         }
         .contact-item:hover {
             text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #about h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0077b5;
+        }
+        #about p {
+            font-size: 16px;
+            color: #555;
         }
 
         /* Sections Styles */
@@ -126,6 +139,16 @@
                 <a href="mailto:your-email@example.com" class="contact-item">Email</a>
             </div>
         </div>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a motivated and results-oriented accounting student with a passion for financial analysis and banking operations. 
+                I have gained practical experience through internships in leading banks, such as CIB and Faisal Islamic Bank. 
+                With expertise in accounting software, financial reporting, and banking operations, I am focused on combining my academic background with professional skills to drive operational efficiency and financial growth.
+            </p>
+        </section>
 
         <!-- Education Section -->
         <section id="education">
