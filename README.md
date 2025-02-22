@@ -3,203 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Metwally - Resume</title>
+    <title>Mohamed Metwally - CV</title>
     <style>
-        * {
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #ffffff;
-            color: #000000;
-            text-align: center;
+        /* Header Section */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            color: black;
         }
-
-        header {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 40px 0;
-            text-align: center;
+        .header-content {
+            flex: 1;
         }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+        .header-content h1 {
+            font-size: 24px;
+            font-weight: bold;
         }
-
-        header h2 {
-            font-size: 2rem;
-            color: #ffffff;
+        .header-content p {
+            font-size: 16px;
+            color: gray;
         }
-
-        .nav-links {
-            margin: 30px 0;
+        .contact-info {
+            display: flex;
+            gap: 15px;
         }
-
-        .nav-links a {
-            font-size: 1.2rem;
-            color: #ffffff;
-            margin: 0 15px;
+        .contact-item {
             text-decoration: none;
+            color: black;
+            font-size: 14px;
         }
-
-        .nav-links a:hover {
+        .contact-item:hover {
             text-decoration: underline;
         }
 
-        .content-section {
-            padding: 50px 0;
-            background-color: #f9f9f9;
-            color: #000000;
-            margin-top: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        /* Education, Certifications, and Work Experience Sections */
+        section {
+            margin-top: 40px;
         }
-
-        .content-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .content-section p, .content-section ul {
-            font-size: 1rem;
-            text-align: left;
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
             margin-bottom: 15px;
         }
-
-        .content-section ul {
+        ul {
             list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;
         }
 
-        .content-section ul li {
+        /* Skills Section */
+        .skills, .languages, .computer-skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div, .languages div, .computer-skills div {
+            width: 30%;
             margin-bottom: 10px;
         }
 
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        /* Achievements Section */
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
         }
-
-        footer p {
-            font-size: 1rem;
+        .achievement {
+            width: 45%;
+            margin-bottom: 10px;
         }
-
-        .social-media a {
-            color: #ffffff;
-            font-size: 1.5rem;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .social-media a:hover {
-            color: #FF6347;
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Mohamed Metwally</h1>
-        <h2>Accountant, Financial Analyst, Data Analyst</h2>
-        <div class="nav-links">
-            <a href="#about">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Work Experience</a>
-            <a href="#achievements">Achievements</a>
+    <div class="container">
+        <!-- Header Section -->
+        <div id="header">
+            <div class="header-content">
+                <h1>Mohamed Metwally</h1>
+                <p>Accountant | Banking Operations | Financial Analyst</p>
+            </div>
+            <div class="contact-info">
+                <a href="tel:01111224933" class="contact-item">Phone: 01111224933</a>
+                <a href="https://www.linkedin.com/in/your-linkedin" class="contact-item">LinkedIn</a>
+                <a href="mailto:your-email@example.com" class="contact-item">Email</a>
+            </div>
         </div>
-    </header>
 
-    <!-- About Me Section -->
-    <div id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>Hello! I am Mohamed Metwally, an aspiring accountant, financial analyst, and data analyst with a passion for technology, financial management, and data analysis. I have a diverse background, with experience in both the private and public sectors, and have honed my skills in various industries.</p>
-        <p>Currently, I am pursuing my Bachelor’s degree in Accounting at Benha University, and I am actively involved in projects and certifications in financial management, accounting, and data analysis.</p>
-        <p>I aim to apply my skills to the banking and financial sectors to improve processes, enhance customer experiences, and contribute to organizational success. I believe in continuous learning and strive to stay at the forefront of industry trends and technology advancements.</p>
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor’s Degree in Accounting</strong><br> Faculty of Commerce, Benha University (Expected Graduation: 2025) – GPA: Very Good</li>
+            </ul>
+        </section>
+
+        <!-- Certifications & Courses Section -->
+        <section id="certifications">
+            <h2>Certifications & Courses</h2>
+            <ul>
+                <li><strong>Diploma in Accounting and Finance</strong> – Oxford Home Study College (Jan 2025 – Mar 2025)</li>
+                <li><strong>Diploma in Effective Bookkeeping and Payroll</strong> – Alison (Jan 2025 – Mar 2025)</li>
+                <li><strong>AI Career Essentials</strong> – ALX (Dec 2024 – Feb 2025)</li>
+                <li><strong>AWS Cloud Economics for Startups</strong> – Amazon Web Services (Nov 2024 – Jan 2025)</li>
+                <li><strong>Financial Services</strong> – Amazon Web Services (Oct 2024 – Dec 2024)</li>
+                <li><strong>Services Analyst</strong> – Amazon Web Services (Sep 2024 – Nov 2024)</li>
+                <li><strong>Getting Started with Amazon</strong> – Amazon Web Services (Aug 2024 – Oct 2024)</li>
+                <li><strong>Skills for Communication</strong> – IBM (Jul 2024 – Sep 2024)</li>
+                <li><strong>Liquidity Management</strong> – The Open University (Jun 2024 – Aug 2024)</li>
+                <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – Jul 2024)</li>
+                <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (Apr 2024 – Jun 2024)</li>
+                <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (Mar 2024 – May 2024)</li>
+                <li><strong>BuildSkills</strong> – Eyoot (Feb 2024 – Apr 2024)</li>
+                <li><strong>Master's in Business Administration (Mini MBA)</strong> – American Board of Professional Studies (Jul 2023 – Apr 2024)</li>
+                <li><strong>Small Project Implementation Phases, Business Models, Financial Planning Programs, Entrepreneurship</strong> – Banking Institute (Jun 2023 – Aug 2023)</li>
+                <li><strong>Entrepreneurship</strong> – Undergraduate Researchers Initiative (Jan 2023 – Mar 2023)</li>
+                <li><strong>Introduction to Banking, Accounting Fundamentals</strong> – CFI Institute (Dec 2022 – Feb 2023)</li>
+                <li><strong>Certified International Trainer Diploma</strong> – Cambridge International Academy, UK (Nov 2022 – Jan 2023)</li>
+                <li><strong>ICDL Preparation Course</strong> – UNIX Academy (Oct 2022 – Dec 2022)</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div><strong>Personal Skills:</strong><br> Communication, Negotiation, Analytical, Attention to Detail, Time Management</div>
+                <div><strong>Language Skills:</strong><br> Arabic (Native), English (Proficient), French (Good)</div>
+                <div><strong>Computer Skills:</strong><br> Microsoft Office (Advanced Excel), Python, Oracle, QuickBooks, SAP</div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Intern at CIB Bank</strong><br> June 2024 – Aug 2024: Gained experience in banking operations and financial services.</li>
+                <li><strong>Intern at Faisal Islamic Bank</strong><br> June 2023 – Aug 2023: Assisted with daily banking functions and learned Islamic banking practices.</li>
+                <li><strong>Accountant at Business Compaq Office for Accounting</strong><br> Mar 2021 – Apr 2023: Managed financial records, transactions, and assisted with audits.</li>
+            </ul>
+        </section>
+
+        <!-- Achievements & Activities Section -->
+        <section id="achievements">
+            <h2>Achievements & Activities</h2>
+            <div class="achievements">
+                <div class="achievement"><strong>Ideal Student Award</strong> – Named Ideal Student of the Faculty of Commerce, Benha University (2024-2025)</div>
+                <div class="achievement"><strong>University Research Recognition</strong> – Recipient of the University’s Encouragement Award for Scientific Research (2024)</div>
+                <div class="achievement"><strong>First Place in Scientific Research</strong> – Awarded first place for Scientific Research in 2025</div>
+                <div class="achievement"><strong>CMA Scholarship</strong> – Awarded a CMA scholarship in recognition of academic excellence</div>
+                <div class="achievement"><strong>President, University Cities Students Union</strong> – Led initiatives and advocated for student welfare at Benha University</div>
+                <div class="achievement"><strong>Member, European Organization for Human Rights and Sustainable Development</strong></div>
+                <div class="achievement"><strong>International Certified Trainer</strong> – Certified by Cambridge Academy</div>
+                <div class="achievement"><strong>Volunteer, Life Makers Organization</strong> – Actively participated in community service initiatives</div>
+                <div class="achievement"><strong>Director, Egyptian Organization for Human Rights and Development</strong></div>
+                <div class="achievement"><strong>Published Research Paper</strong> – Published paper on “Activating the Partnership between the Faculty of Commerce and Community Institutions”</div>
+            </div>
+        </section>
     </div>
 
-    <!-- Education Section -->
-    <div id="education" class="content-section">
-        <h2>Education</h2>
-        <p><strong>Bachelor’s Degree in Accounting</strong> – Faculty of Commerce, Benha University (Expected Graduation: 2025) – GPA: Very Good</p>
-    </div>
-
-    <!-- Certifications Section -->
-    <div id="certifications" class="content-section">
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Diploma in Accounting and Finance</strong> – Oxford Home Study College (January 2025 – March 2025)</li>
-            <li><strong>Diploma in Effective Bookkeeping and Payroll</strong> – Alison (January 2025 – March 2025)</li>
-            <li><strong>AI Career Essentials</strong> – ALX (December 2024 – February 2025)</li>
-            <li><strong>AWS Cloud Economics for Startups</strong> – Amazon Web Services (AWS) (November 2024 – January 2025)</li>
-            <li><strong>Financial Services</strong> – Amazon Web Services (AWS) (October 2024 – December 2024)</li>
-            <li><strong>Services Analyst</strong> – Amazon Web Services (AWS) (September 2024 – November 2024)</li>
-            <li><strong>Getting Started with Amazon</strong> – Amazon Web Services (AWS) (August 2024 – October 2024)</li>
-            <li><strong>Skills for Communication</strong> – IBM (July 2024 – September 2024)</li>
-            <li><strong>Liquidity Management</strong> – The Open University (June 2024 – August 2024)</li>
-            <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – July 2024)</li>
-            <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (April 2024 – June 2024)</li>
-            <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (March 2024 – May 2024)</li>
-            <li><strong>BuildSkills</strong> – Eyoot (February 2024 – April 2024)</li>
-            <li><strong>Master's in Business Administration (Mini MBA)</strong> – American Board of Professional Studies (July 2023 – April 2024)</li>
-            <li><strong>Small Project Implementation Phases, Business Models, Financial Planning Programs, Entrepreneurship, Bank and Small Projects Relationship</strong> – Banking Institute (June 2023 – August 2023)</li>
-            <li><strong>Entrepreneurship</strong> – Undergraduate Researchers Initiative (January 2023 – March 2023)</li>
-            <li><strong>Introduction to Banking, Accounting Fundamentals, Reading Financial Statements, Introduction to Capital Markets</strong> – CFI Institute (December 2022 – February 2023)</li>
-            <li><strong>Certified International Trainer Diploma</strong> – Cambridge International Academy, UK (November 2022 – January 2023)</li>
-            <li><strong>ICDL Preparation Course</strong> – UNIX Academy (October 2022 – December 2022)</li>
-        </ul>
-    </div>
-
-    <!-- Skills Section -->
-    <div id="skills" class="content-section">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Personal Skills:</strong> Communication, Negotiation, Analytical Thinking, Attention to Detail, Time Management</li>
-            <li><strong>Language Skills:</strong> Arabic (Native), English (Proficient), French (Good)</li>
-            <li><strong>Computer Skills:</strong> Advanced in Excel, Oracle Database, Python Programming, QuickBooks, SAP</li>
-            <li><strong>Banking and Financial Skills:</strong> Financial Statement Analysis, Banking Regulations, Loan Processing, Cash Flow Management, Financial Planning</li>
-        </ul>
-    </div>
-
-    <!-- Work Experience Section -->
-    <div id="experience" class="content-section">
-        <h2>Work Experience</h2>
-        <p><strong>Intern at CIB Bank</strong> (June 2024 – August 2024): Gained experience in banking operations and financial services, focusing on customer service.</p>
-        <p><strong>Intern at Faisal Islamic Bank</strong> (June 2023 – August 2023): Gained knowledge of Islamic banking practices and assisted with daily banking functions.</p>
-        <p><strong>Accountant at Business Compaq Office for Accounting</strong> (March 2021 – April 2023): Responsible for maintaining financial records, processing transactions, and assisting with audits.</p>
-    </div>
-
-    <!-- Achievements Section -->
-    <div id="achievements" class="content-section">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Ideal Student Award: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
-            <li>University Research Recognition: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
-            <li>First Place in Scientific Research: Awarded first place for Scientific Research in 2025.</li>
- <li>Ideal Student Award: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
-        <li>University Research Recognition: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
-        <li>CMA Scholarship: Awarded a CMA scholarship in recognition of academic excellence and professional potential.</li>
-        <li>President, University Cities Students Union, Benha University: Led student initiatives and advocated for student welfare across university cities.</li>
-        <li>Member, European Organization for Human Rights and Sustainable Development: Contributed to efforts in human rights advocacy and sustainability.</li>
-        <li>International Certified Trainer: Certified by Cambridge Academy and the Human Development Trainers Syndicate, focusing on personal and professional development.</li>
-        <li>Volunteer, Life Makers Organization: Actively participated in community service initiatives in Sharkia Governorate.</li>
-        <li>Director, Egyptian Organization for Human Rights and Development: Oversaw and supported institutional initiatives aimed at enhancing human rights in Egypt.</li>
-        <li>Published Research Paper: Published a paper on “Activating the Partnership between the Faculty of Commerce, University Faculties, and Community Institutions” to improve educational and practical outcomes for students.</li>
-        <li>Technology Awareness Ambassador: Participated in the Ministry of Social Solidarity’s Technology Awareness Program to promote digital literacy.</li>
-        <li>Symposia Participation: Attended key symposia on etiquette, economic challenges, and international cooperation organized by Alexandria University.</li>
-    </ul>
-</div>
-
-
+</body>
+</html>
