@@ -152,7 +152,13 @@
             <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – July 2024)</li>
             <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (April 2024 – June 2024)</li>
             <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (March 2024 – May 2024)</li>
-            <li><strong>Mini MBA</strong> – American Board of Professional Studies (2024)</li>
+            <li><strong>BuildSkills</strong> – Eyoot (February 2024 – April 2024)</li>
+            <li><strong>Master's in Business Administration (Mini MBA)</strong> – American Board of Professional Studies (July 2023 – April 2024)</li>
+            <li><strong>Small Project Implementation Phases, Business Models, Financial Planning Programs, Entrepreneurship, Bank and Small Projects Relationship</strong> – Banking Institute (June 2023 – August 2023)</li>
+            <li><strong>Entrepreneurship</strong> – Undergraduate Researchers Initiative (January 2023 – March 2023)</li>
+            <li><strong>Introduction to Banking, Accounting Fundamentals, Reading Financial Statements, Introduction to Capital Markets</strong> – CFI Institute (December 2022 – February 2023)</li>
+            <li><strong>Certified International Trainer Diploma</strong> – Cambridge International Academy, UK (November 2022 – January 2023)</li>
+            <li><strong>ICDL Preparation Course</strong> – UNIX Academy (October 2022 – December 2022)</li>
         </ul>
     </div>
 
@@ -160,44 +166,41 @@
     <div id="skills" class="content-section">
         <h2>Skills</h2>
         <ul>
-            <li><strong>Data Analysis</strong> – Proficient in SQL, Python, Excel, QuickBooks, SAP</li>
-            <li><strong>Financial Analysis</strong> – Budgeting, Forecasting, Cash Flow Management</li>
-            <li><strong>Accounting</strong> – Financial Reporting, Auditing, Taxation, Payroll</li>
-            <li><strong>Communication</strong> – Strong interpersonal and communication skills</li>
-            <li><strong>Language Skills</strong> – Arabic (Native), English (Fluent), French (Intermediate)</li>
+            <li><strong>Personal Skills:</strong> Communication, Negotiation, Analytical Thinking, Attention to Detail, Time Management</li>
+            <li><strong>Language Skills:</strong> Arabic (Native), English (Proficient), French (Good)</li>
+            <li><strong>Computer Skills:</strong> Advanced in Excel, Oracle Database, Python Programming, QuickBooks, SAP</li>
+            <li><strong>Banking and Financial Skills:</strong> Financial Statement Analysis, Banking Regulations, Loan Processing, Cash Flow Management, Financial Planning</li>
         </ul>
     </div>
 
     <!-- Work Experience Section -->
     <div id="experience" class="content-section">
         <h2>Work Experience</h2>
-        <p><strong>Accountant</strong> – Business Comeback Company (July 2022 – August 2023)</p>
-        <p><strong>Financial Analyst Intern</strong> – Bank of CIB, Zagazig Branch (August 2024 – September 2024)</p>
-        <p><strong>Banking Intern</strong> – Bank Faisal Islami (October 2023 – December 2023)</p>
+        <p><strong>Intern at CIB Bank</strong> (June 2024 – August 2024): Gained experience in banking operations and financial services, focusing on customer service.</p>
+        <p><strong>Intern at Faisal Islamic Bank</strong> (June 2023 – August 2023): Gained knowledge of Islamic banking practices and assisted with daily banking functions.</p>
+        <p><strong>Accountant at Business Compaq Office for Accounting</strong> (March 2021 – April 2023): Responsible for maintaining financial records, processing transactions, and assisting with audits.</p>
     </div>
 
     <!-- Achievements Section -->
     <div id="achievements" class="content-section">
         <h2>Achievements</h2>
         <ul>
-            <li>Top Research Award 2025</li>
-            <li>Received the CMA Scholarship</li>
-            <li>Published Research in the International Journal of Economic Studies – Berlin</li>
-            <li>First Prize in Academic Research at Benha University (2024)</li>
-            <li>President of the Students Union of the University Dormitories – Benha University</li>
-            <li>Executive Director of the Leaders Foundation</li>
-        </ul>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com</a></p>
-        <p>Phone: <a href="tel:+01002347613">+01002347613</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank">LinkedIn Profile</a></p>
-    </footer>
-
-</body>
-</html>
-
+            <li>Ideal Student Award: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
+            <li>University Research Recognition: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
+            <li>First Place in Scientific Research: Awarded first place for Scientific Research in 2025.</li>
+ <li>Ideal Student Award: Named Ideal Student of the Faculty of Commerce, Benha University for the academic year 2024-2025.</li>
+        <li>University Research Recognition: Recipient of the University’s Encouragement Award for Scientific Research in 2024.</li>
+        <li>First Place in Scientific Research: Awarded first place for Scientific Research in 2025.</li>
+        <li>CMA Scholarship: Awarded a CMA scholarship in recognition of academic excellence and professional potential.</li>
+        <li>President, University Cities Students Union, Benha University: Led student initiatives and advocated for student welfare across university cities.</li>
+        <li>Member, European Organization for Human Rights and Sustainable Development: Contributed to efforts in human rights advocacy and sustainability.</li>
+        <li>International Certified Trainer: Certified by Cambridge Academy and the Human Development Trainers Syndicate, focusing on personal and professional development.</li>
+        <li>Volunteer, Life Makers Organization: Actively participated in community service initiatives in Sharkia Governorate.</li>
+        <li>Director, Egyptian Organization for Human Rights and Development: Oversaw and supported institutional initiatives aimed at enhancing human rights in Egypt.</li>
+        <li>Published Research Paper: Published a paper on “Activating the Partnership between the Faculty of Commerce, University Faculties, and Community Institutions” to improve educational and practical outcomes for students.</li>
+        <li>Technology Awareness Ambassador: Participated in the Ministry of Social Solidarity’s Technology Awareness Program to promote digital literacy.</li>
+        <li>Symposia Participation: Attended key symposia on etiquette, economic challenges, and international cooperation organized by Alexandria University.</li>
+    </ul>
+</div>
 
 
