@@ -1,3 +1,8 @@
+لجعل الصفحة مشابهة للتصميم في الرابط الذي قدمته، سنحتاج إلى إجراء بعض التعديلات في تنسيق الصفحة وتحديث أسلوب عرض العناصر لتكون أكثر حداثة وتناسبًا مع التنسيق المطلوب.
+
+إليك الكود المعدل الذي يقترب من التصميم الذي ترغب فيه:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +12,17 @@
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f7f7;
             color: #333;
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
         }
 
         /* Header Section */
@@ -24,46 +30,50 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #fff;
             padding: 20px;
-            background-color: white;
-            color: black;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         .header-content {
             flex: 1;
         }
         .header-content h1 {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            color: #333;
         }
         .header-content p {
-            font-size: 16px;
-            color: gray;
+            font-size: 18px;
+            color: #555;
         }
         .contact-info {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
         .contact-item {
             text-decoration: none;
-            color: black;
-            font-size: 14px;
+            color: #0077b5;
+            font-size: 16px;
         }
         .contact-item:hover {
             text-decoration: underline;
         }
 
-        /* Education, Certifications, and Work Experience Sections */
+        /* Sections Styles */
         section {
             margin-top: 40px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
             margin-bottom: 15px;
+            color: #0077b5;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            line-height: 1.6;
         }
         li {
             margin-bottom: 10px;
@@ -79,17 +89,25 @@
         }
         .skills div, .languages div, .computer-skills div {
             width: 30%;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         /* Achievements Section */
         .achievements {
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .achievement {
             width: 45%;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .achievement strong {
+            color: #0077b5;
         }
     </style>
 </head>
@@ -173,13 +191,3 @@
                 <div class="achievement"><strong>CMA Scholarship</strong> – Awarded a CMA scholarship in recognition of academic excellence</div>
                 <div class="achievement"><strong>President, University Cities Students Union</strong> – Led initiatives and advocated for student welfare at Benha University</div>
                 <div class="achievement"><strong>Member, European Organization for Human Rights and Sustainable Development</strong></div>
-                <div class="achievement"><strong>International Certified Trainer</strong> – Certified by Cambridge Academy</div>
-                <div class="achievement"><strong>Volunteer, Life Makers Organization</strong> – Actively participated in community service initiatives</div>
-                <div class="achievement"><strong>Director, Egyptian Organization for Human Rights and Development</strong></div>
-                <div class="achievement"><strong>Published Research Paper</strong> – Published paper on “Activating the Partnership between the Faculty of Commerce and Community Institutions”</div>
-            </div>
-        </section>
-    </div>
-
-</body>
-</html>
