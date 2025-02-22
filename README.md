@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +57,15 @@
             display: inline-block;
         }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
         footer {
             background-color: #000000;
             color: #ffffff;
@@ -100,6 +108,27 @@
             <li>First Place in Scientific Research (2025)</li>
             <li>CMA Scholarship Recipient</li>
             <li>President of the University Dormitory Student Union</li>
+        </ul>
+    </div>
+
+    <div class="content-section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>Financial Analysis & Accounting</div>
+            <div>Data Analysis & SQL</div>
+            <div>Excel & QuickBooks</div>
+            <div>Banking & Liquidity Management</div>
+            <div>Leadership & Team Management</div>
+            <div>Multilingual: Arabic, English, French</div>
+        </div>
+    </div>
+
+    <div class="content-section" id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: mohamed.metwally@example.com</li>
+            <li>LinkedIn: linkedin.com/in/mohamedmetwally</li>
+            <li>Phone: +20 100 234 7613</li>
         </ul>
     </div>
 
