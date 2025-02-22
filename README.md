@@ -16,8 +16,13 @@
             line-height: 1.6;
             background-color: #fff;
             color: #333;
-            direction: ltr;
             text-align: center;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/52/Benha_University_logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: 20%;
+            opacity: 0.1;
         }
 
         body[lang="ar"] {
@@ -39,7 +44,7 @@
         }
 
         header h2 {
-            color: #e63946;
+            color: #FFBF00;
         }
 
         .typing-effect {
@@ -76,18 +81,8 @@
             padding: 20px;
         }
 
-        .file-upload {
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .file-upload input {
-            font-size: 1rem;
-            padding: 10px;
-        }
-
         .btn-primary {
-            background-color: #e63946;
+            background-color: #FFBF00;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -97,7 +92,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #c51d3e;
+            background-color: #FF9F00;
         }
 
         footer {
@@ -119,7 +114,7 @@
 
         .nav-links a {
             font-size: 1.2rem;
-            color: #e63946;
+            color: #FFBF00;
             margin: 0 15px;
             text-decoration: none;
         }
@@ -138,7 +133,7 @@
 
         .content-section h2 {
             font-size: 2rem;
-            color: #e63946;
+            color: #FFBF00;
             margin-bottom: 20px;
         }
 
@@ -157,6 +152,11 @@
         .content-section ul li {
             margin-bottom: 10px;
         }
+
+        .nav-links a:active {
+            color: #FF6347;
+        }
+
     </style>
 </head>
 <body lang="en">
@@ -168,12 +168,8 @@
         <div class="typing-effect" id="typing-effect">Mohamed Metwally</div>
         <img src="https://drive.google.com/uc?export=view&id=1ZuIowj4L4Vi-AaAyXE2_HjY_rFhC5VV-" alt="Mohamed Metwally" class="profile-img">
         
-        <!-- File upload for profile picture -->
-        <div class="file-upload">
-            <input type="file" id="fileInput" accept="image/*">
-        </div>
-        
         <div class="nav-links">
+            <a href="#about" class="typing-effect">About Me</a>
             <a href="#education" class="typing-effect">Education</a>
             <a href="#certifications" class="typing-effect">Certifications</a>
             <a href="#skills" class="typing-effect">Skills</a>
@@ -182,13 +178,21 @@
         </div>
     </header>
 
-    <!-- Content Section for Education -->
+    <!-- About Me Section -->
+    <div id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Hello! I am Mohamed Metwally, an aspiring accountant, financial analyst, and data analyst with a passion for technology, financial management, and data analysis. I have a diverse background, with experience in both the private and public sectors, and have honed my skills in various industries.</p>
+        <p>Currently, I am pursuing my Bachelor’s degree in Accounting at Benha University, and I am actively involved in projects and certifications in financial management, accounting, and data analysis.</p>
+        <p>I aim to apply my skills to the banking and financial sectors to improve processes, enhance customer experiences, and contribute to organizational success. I believe in continuous learning and strive to stay at the forefront of industry trends and technology advancements.</p>
+    </div>
+
+    <!-- Education Section -->
     <div id="education" class="content-section">
         <h2>Education</h2>
         <p><strong>Bachelor’s Degree in Accounting</strong> – Faculty of Commerce, Benha University (Expected Graduation: 2025) – GPA: Very Good</p>
     </div>
 
-    <!-- Content Section for Certifications -->
+    <!-- Certifications Section -->
     <div id="certifications" class="content-section">
         <h2>Certifications</h2>
         <ul>
@@ -207,7 +211,7 @@
         </ul>
     </div>
 
-    <!-- Content Section for Skills -->
+    <!-- Skills Section -->
     <div id="skills" class="content-section">
         <h2>Skills</h2>
         <ul>
@@ -219,7 +223,7 @@
         </ul>
     </div>
 
-    <!-- Content Section for Work Experience -->
+    <!-- Work Experience Section -->
     <div id="experience" class="content-section">
         <h2>Work Experience</h2>
         <p><strong>Accountant</strong> – Business Comeback Company (July 2022 – August 2023)</p>
@@ -227,7 +231,7 @@
         <p><strong>Banking Intern</strong> – Bank Faisal Islami (October 2023 – December 2023)</p>
     </div>
 
-    <!-- Content Section for Achievements -->
+    <!-- Achievements Section -->
     <div id="achievements" class="content-section">
         <h2>Achievements</h2>
         <ul>
