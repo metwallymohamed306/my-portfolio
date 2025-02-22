@@ -13,130 +13,63 @@
 
         body {
             font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             background-color: #ffffff;
             color: #000000;
-            line-height: 1.6;
             text-align: center;
-        }
-
-        body[lang="ar"] {
-            direction: rtl;
         }
 
         header {
-            background-color: #ffffff;
-            padding: 20px 0;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 40px 0;
             text-align: center;
-            position: relative;
-            border-bottom: 2px solid #000000;
         }
 
         header h1 {
             font-size: 3rem;
-            font-weight: bold;
-            color: #000000;
+            margin-bottom: 10px;
             letter-spacing: 2px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            animation: fadeIn 1.5s ease-in-out;
         }
 
         header h2 {
-            font-size: 1.5rem;
-            color: #000000;
-            margin-bottom: 15px;
-            font-weight: normal;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .social-media {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-            font-size: 1.3rem;
-            color: #000000;
-            text-transform: uppercase;
-        }
-
-        .social-media a {
-            color: #000000;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .social-media a:hover {
-            color: #FF6347;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .btn-primary {
-            background-color: #000000;
+            font-size: 2rem;
             color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        }
+
+        .nav-links {
+            margin: 30px 0;
+        }
+
+        .nav-links a {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
         }
 
-        .btn-primary:hover {
-            background-color: #FF6347;
-        }
-
-        footer {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            border-top: 2px solid #000000;
-        }
-
-        footer p {
-            font-size: 1rem;
+        .nav-links a:hover {
+            text-decoration: underline;
         }
 
         .content-section {
-            padding: 40px 0;
-            background-color: #ffffff;
+            padding: 50px 0;
+            background-color: #f9f9f9;
             color: #000000;
             margin-top: 30px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            animation: fadeIn 1.5s ease-in-out;
         }
 
         .content-section h2 {
             font-size: 2rem;
-            color: #000000;
             margin-bottom: 20px;
-            text-align: left;
-            font-weight: bold;
         }
 
         .content-section p, .content-section ul {
             font-size: 1rem;
-            margin-bottom: 15px;
             text-align: left;
+            margin-bottom: 15px;
         }
 
         .content-section ul {
@@ -147,48 +80,47 @@
             margin-bottom: 10px;
         }
 
-        .nav-links {
-            margin-top: 20px;
-            text-align: center;
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
-        .nav-links a {
-            font-size: 1.2rem;
-            color: #000000;
-            margin: 0 20px;
+        footer p {
+            font-size: 1rem;
+        }
+
+        .social-media a {
+            color: #ffffff;
+            font-size: 1.5rem;
             text-decoration: none;
+            margin: 0 10px;
         }
 
-        .nav-links a:hover {
-            text-decoration: underline;
+        .social-media a:hover {
+            color: #FF6347;
         }
 
     </style>
 </head>
-<body lang="en">
+<body>
 
     <!-- Header Section -->
     <header>
         <h1>Mohamed Metwally</h1>
-        <h2>Accountant | Financial Analyst | Data Analyst</h2>
-
-        <!-- Social Media Links -->
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank" title="LinkedIn">LinkedIn</a>
-            <a href="mailto:MohamedMetwally.Mohamed@outlook.com" title="Email">Email</a>
-            <a href="tel:+01002347613" title="Phone">Phone</a>
+        <h2>Accountant, Financial Analyst, Data Analyst</h2>
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#achievements">Achievements</a>
         </div>
     </header>
-
-    <!-- Navigation Links -->
-    <div class="nav-links">
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#achievements">Achievements</a>
-    </div>
 
     <!-- About Me Section -->
     <div id="about" class="content-section">
@@ -220,6 +152,7 @@
             <li><strong>Data Literacy Certificate</strong> – SAS (May 2024 – July 2024)</li>
             <li><strong>Financial Accounting Management and Reporting</strong> – UNICEF (April 2024 – June 2024)</li>
             <li><strong>Diploma in Financial Management</strong> – American Board of Professional Studies (March 2024 – May 2024)</li>
+            <li><strong>Mini MBA</strong> – American Board of Professional Studies (2024)</li>
         </ul>
     </div>
 
@@ -240,11 +173,27 @@
         <h2>Work Experience</h2>
         <p><strong>Accountant</strong> – Business Comeback Company (July 2022 – August 2023)</p>
         <p><strong>Financial Analyst Intern</strong> – Bank of CIB, Zagazig Branch (August 2024 – September 2024)</p>
+        <p><strong>Banking Intern</strong> – Bank Faisal Islami (October 2023 – December 2023)</p>
+    </div>
+
+    <!-- Achievements Section -->
+    <div id="achievements" class="content-section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Top Research Award 2025</li>
+            <li>Received the CMA Scholarship</li>
+            <li>Published Research in the International Journal of Economic Studies – Berlin</li>
+            <li>First Prize in Academic Research at Benha University (2024)</li>
+            <li>President of the Students Union of the University Dormitories – Benha University</li>
+            <li>Executive Director of the Leaders Foundation</li>
+        </ul>
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Mohamed Metwally | All Rights Reserved</p>
+        <p>Contact: <a href="mailto:MohamedMetwally.Mohamed@outlook.com">MohamedMetwally.Mohamed@outlook.com</a></p>
+        <p>Phone: <a href="tel:+01002347613">+01002347613</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-metwally-0182bb2b5" target="_blank">LinkedIn Profile</a></p>
     </footer>
 
 </body>
