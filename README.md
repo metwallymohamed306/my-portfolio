@@ -82,11 +82,27 @@
         <h2>Accountant, Financial Analyst, Data Analyst</h2>
     </header>
 
+    <div class="content-section" id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: mohamed.metwally@example.com</li>
+            <li>LinkedIn: linkedin.com/in/mohamedmetwally</li>
+            <li>Phone: +20 100 234 7613</li>
+        </ul>
+    </div>
+
+    <div class="content-section" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor's Degree in Accounting - Faculty of Commerce, Benha University (Expected 2025) - GPA: Very Good</li>
+            <li>Diploma in Accounting and Finance - Oxford Home Study College</li>
+            <li>Diploma in Effective Bookkeeping and Payroll - Alison</li>
+        </ul>
+    </div>
+
     <div class="content-section" id="courses">
         <h2>Courses & Certifications</h2>
         <ul>
-            <li>Diploma in Accounting and Finance - Oxford Home Study College</li>
-            <li>Diploma in Effective Bookkeeping and Payroll - Alison</li>
             <li>AI Career Essentials - ALX</li>
             <li>AWS Cloud Economics for Startups - AWS</li>
             <li>Financial Services - AWS</li>
@@ -121,15 +137,6 @@
             <div>Leadership & Team Management</div>
             <div>Multilingual: Arabic, English, French</div>
         </div>
-    </div>
-
-    <div class="content-section" id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: mohamed.metwally@example.com</li>
-            <li>LinkedIn: linkedin.com/in/mohamedmetwally</li>
-            <li>Phone: +20 100 234 7613</li>
-        </ul>
     </div>
 
     <footer>
